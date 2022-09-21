@@ -340,7 +340,7 @@ nav img {
 }
 
 .logoBoxHover {
-  width: 60%;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -493,9 +493,6 @@ i:focus {
     color: black;
     font-size: 4rem;
   }
-  .logoBox {
-    width: 50%;
-  }
   .logoBox img {
     height: 60px;
     width: auto;
@@ -508,9 +505,6 @@ i:focus {
   }
 }
 @media (max-width: 480px) {
-  .logoBox {
-    width: 80%;
-  }
   .navRed {
     font-size: 1.5rem;
     line-height: 1;
