@@ -1,0 +1,123 @@
+@use "../variables" as *;
+
+
+// NAV AND HEADER 
+
+
+nav {
+  background-color: white;
+  text-align: center;
+  position: fixed;  
+  width: 100%;
+  padding: 6px 0;
+  z-index: 100; 
+}
+
+
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  z-index: 1;
+}
+
+.menu li {
+  list-style: none;
+}
+
+
+.menu a {
+  display: flex;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 10px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+
+.menu a:hover,
+.menu a:focus {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+nav img {
+  width: auto;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;  
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 90px;
+}
+
+
+// HAMBURGER MENU 
+
+.hamburger {
+  display: none; 
+  z-index: 2;
+  cursor: pointer;
+}
+
+.bar {
+  display: block; 
+  width: 25px; 
+  height: 3px; 
+  margin: 5px auto; 
+  *transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+
+
+// LOGO BOX 
+
+.logoBox {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+  align-items: center;
+}
+
+.logoBoxHover {
+  width: 60%;
+  padding: 0;
+  margin: 0;
+}
+
+.navRed {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(255, 0, 0, 0.7);
+  font-size: 2.5rem; 
+}
+
+.navBlue {
+  text-transform: uppercase;
+  font-weight: bold;
+  color:rgba(0, 0, 255, 0.7);
+  font-size: 2.5rem;
+}
+
+.logoBoxText {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+

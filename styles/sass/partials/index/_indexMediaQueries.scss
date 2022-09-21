@@ -1,0 +1,212 @@
+@use "../variables" as *;
+
+@media (max-width: 1200px) {
+  html.index {
+    header {
+      background-position: center top 50px;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  html.index {
+  
+    h1 {
+      font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .chairBrands ul {
+      flex-direction: column;
+  }
+
+    .doubleGrid li {
+        margin: 5px 0; 
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .tripleGrid li {
+        margin: 5px 0;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .brandLabelDouble p, .brandLabelTriple p {
+      font-size: 2.3rem;
+      text-align: center;
+    }
+
+    .deliveryContainer {
+        flex-direction: column;
+    }
+    
+    .deliveryContainer img {
+        height: 30vh;
+    }
+    
+    .innerDeliveryContainer {
+        margin: 25px auto; 
+        justify-content: center;
+        padding: 0;
+        border: none;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    .aboutText {
+        flex-direction: column;
+    }
+    
+    .aboutText img {
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .companyBio {
+        width: 100%;
+        margin: 25px auto; 
+    }
+    
+    .footerContainer {
+        flex-direction: column;
+    }
+
+    .addressInfo {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+
+    .socialMedia {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;   
+    }
+
+    .socialMedia li {
+        color: black;
+        margin-left: 20px;
+        list-style: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  html.index {
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    .contactInfo {
+        font-size: 1.5rem;
+    }
+        
+    .contactInfo select, .contactInfo option, textarea {
+        font-size: 1.5rem;
+    }
+    
+    button {
+        font-size: 1.5rem;
+    }
+
+    .doubleGrid li, .tripleGrid li {
+        height: 25vh;
+    }
+
+    .deliveryContainer img {
+        height: 20vh;
+    }
+
+    .companyBio {
+        margin-bottom: 0px;
+    }
+    
+    .aboutText img {
+        height: 20vh;
+    }
+
+    .socialMedia img {
+      height: 40px;
+      width: auto;
+    }    
+  }
+}
+
+@media (max-width: 480px) {
+  html.index {
+
+    header {
+        height: 50vh;
+        background-position: center top 60px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    .contactInfo {
+        font-size: 1.5rem;
+    }
+        
+    .contactInfo select, .contactInfo option, textarea {
+        font-size: 1.5rem;
+    }
+    
+    button {
+        font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  html.index {
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+        font-size: 2.3rem;
+    }
+
+    h5 {
+        font-size: 1.9rem;
+    }
+  }
+}

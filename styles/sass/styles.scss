@@ -1,0 +1,13 @@
+@use "partials/setup";
+@use "partials/variables" as *;
+@use "partials/typography";
+
+@use "partials/generalStyles";
+@use "partials/nav/nav";
+@use "partials/footer";
+
+@use "partials/nav/navMediaQueries";
+
+@use "partials/index/indexStyles";
+@use "partials/index/indexMediaQueries";
+

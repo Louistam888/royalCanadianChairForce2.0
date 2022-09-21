@@ -1,0 +1,44 @@
+@use "variables" as *;
+
+
+@media (max-width: 940px) {
+
+  p {
+      font-size: 1.9rem;
+      line-height: 1.9rem;
+  }
+
+  section {
+      margin: 50px auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  
+  p {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  p {
+      font-size: 1.7rem;
+      line-height: 1.7rem;
+  }
+}
+
+
+
+@media (max-width: 430px) {
+  p {
+      font-size: 1.7rem;
+      line-height: 1.7rem;
+  }
+
+  section {
+      margin: 50px auto;
+  }
+}

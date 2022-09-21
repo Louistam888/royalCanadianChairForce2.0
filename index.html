@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="index">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Computer Chair Depot</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet"> 
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+
+</head>
+  <body>
+    <!--NAV AND HEADER-->
+    <header>
+      <nav>
+        <div class="wrapper">
+          <div class="navContainer">
+            <a href="index.html" class="logoBoxHover">
+              <div class="logoBox">
+                <img src="./Assets/RCCF.png" alt="">
+                <div class="logoBoxText">
+                  <p class ="navRed">Royal Canadian</p>
+                  <p class ="navBlue">Chair Force</p>
+                </div>
+              </div>
+            </a>
+                                                   
+            <ul class="menu">
+                <li><a href="#about" class="menuLink">About</a></li>
+                <li><a href="#brands" class="menuLink">Brands</a></li>
+                <li><a href="#delivery" class="menuLink">Delivery</a></li>
+                <li><a href="#contact"class="menuLink">Contact</a></li>
+            </ul>
+                    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+          </div>        
+        </div>
+      </nav>  
+
+      <div class="mainTextContainer">
+        <h1><span class="h1Red">Game</span> at the next level</h1>
+        <h2>Your throne awaits</h2>
+      </div>        
+    </header>
+
+    <main>
+      <!--BRANDS-->
+      <section class="chairBrands" id="brands">
+          <div class="wrapper">
+            <h3>Best Selling Brands</h3>
+            <p class="sectionText">Your back should hurt from carrying your team. Not from sitting. An ergonomically-designed professional gaming chair will do wonders for your neck and back as you lead your clan to victory. Whether you are a professional or semi-professional gamer, we've got a chair to take your raids to the next level!</p>   
+            <ul class="doubleGrid">
+              <li class="image1">
+                <img src="./Assets/AKRACING.jpg" alt="AK Racing">
+                <div class="brandLabelDouble">
+                  <p>ak racing</p>
+                </div>
+                <a href="https://www.akracing.com" target="_blank">
+                  <div class="brandHoverOverlay">
+                    <h4>ak racing</h4>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <img src="./Assets/dragonwar.jpg" alt="Dragon War">
+                <div class="brandLabelDouble">
+                  <p>dragon war</p>
+                </div>
+                <a href="https://www.dragonwar.jp" target="_blank">
+                  <div class="brandHoverOverlay">
+                  <h4>dragon war</h4>
+                  </div>
+                </a>
+              </li>
+              </ul>
+            <ul class="tripleGrid">
+              <li>
+                <img src="./Assets/GTR.jpg" alt="GTR">
+                  <div class="brandLabelTriple">
+                    <p>gtr</p>
+                  </div>
+                  <a href="https://www.gtracing.com" target="_blank">
+                    <div class="brandHoverOverlay">
+                      <h4>GT Racing</h4>
+                    </div>
+                  </a>
+              </li>
+              <li>
+                <img src="./Assets/ROG.jpg" alt="ROG">
+                  <div class="brandLabelTriple">
+                    <p>rog</p>
+                  </div>
+                  <a href="https://rog.asus.com" target="_blank">
+                          <div class="brandHoverOverlay">
+                              <h4>Republic of Gamers</h4>
+                          </div>
+                  </a>      
+              </li>
+              <li>
+                <img src="./Assets/other.jpg" alt="All brands">
+                <div class="brandLabelTriple">
+                  <p>more chairs</p>
+                </div>
+                <a href="#" target="_blank">
+                  <div class="brandHoverOverlay">
+                    <h4>more chairs</h4>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div><!--wrapper div-->
+        </section>
+
+        <!--DELIVERY-->
+
+        <section id="delivery">
+          <div class="wrapper">
+            <h3>Delivery</h3>
+              <div class="deliveryContainer">
+                <img src="./Assets/delivery.jpg" alt="Boxes being wheeled on a dolly">
+                  <div class="innerDeliveryContainer">
+                    <h5>we offer <span class="h5Underline">free</span> delivery!</h5>
+                    <p>We bring your new gaming chair right to your doorstep, ready to go with our free home delivery service. No assembly required!</p>
+                    <p>Live outside of Canada? No problem! We are also on Amazon Prime, so we can get your gaming chair to you no matter where in the world you are logging in from. </p>
+                    <p>Let us take care of all the heavy lifting. You just focus on practicing those "360 no scopes."</p> 
+                  </div>
+              </div>
+          </div>
+        </section>
+
+        <!--CONTACT US-->
+
+        <section class="contact" id="contact">
+          <div class="wrapper">
+               
+        <!--FORM-->
+
+            <form action="#" method="post" name="contactForm">
+              <h3>Contact us</h3>
+              <p>Got questions? We got answers! Drop us a line using the form below and we'll get back to you!</p>
+              <div class="contactInfo">
+                <label for="firstName" placeholder="First name">First name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName" placeholder="Last name">Last name:</label> 
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="email" placeholder="Email address">Email address:</label> 
+                <input type="email" id="email" name="lastName" required>
+
+                <label for="phone" placeholder="phone">Phone:</label> 
+                <input type="phone" id="phone" name="phone" required>
+
+                <label for="preferredContact">Which is your preferred method of contact?</label>
+                <select id="preferredContact" name="preferredContact" required>
+                  <option value disabled selected>Please choose an option</option>
+                  <option value="phone">Phone</option>
+                  <option value="email">Email</option>
+                  <option value="doesntMatter">Doesn't matter</option>
+                </select>
+
+                <label for="feedback">Type out your question below (max. 500 characters)</label>
+                <textarea name="userFeedback" id="feedback" cols="30" rows="5" minlength="5" maxlength="500" required></textarea>
+              <button type="submit">Submit</button>
+            </div>
+            </form>                
+          </div>
+        </section>
+
+        <!--ABOUT-->
+        <section id="about">
+          <div class="wrapper">
+            <h3>about us</h3>
+            <div class="aboutText"> 
+              <img src = "./Assets/gaming-chairs-holiday-gift-guide-mobile.jpg" alt = "A gaming chair at a gaming station with a green LED lighting theme.">
+                <div class="companyBio">
+                  <p>Since 1990, Royal Canadian Chair Force has been selling top-quality chairs for those working in tech.</p>
+                  <p>Starting in the early 2000s, we expanded our product line into gaming chairs. We quickly found that there is a huge demand, and since 2005 we've switched over to selling gaming chairs exclusively.</p> 
+                  <p>We sell only the highest-quality gaming chairs to both professional and casual gamers. We are a factory-authorized dealer of numerous high-end gaming chair brands, including RK Racing, Republic of Gamers, Dragon War and more. </p>
+                  <p>Give you back the break it deserves. Check out our lineup of chairs today!</p>
+                </div>
+            </div>
+          </div>
+        </section>
+    </main>
+  <body>
+    <footer> 
+      <div class="wrapper">
+        <hr>
+        <div class="footerContainer">
+          <ul class="addressInfo">
+            <li class="address1">Royal Canadian Chair Force</li>
+            <li class="address2">1 Toronto St.</li>
+            <li class="address2">Toronto, ON   M8Y 18Y</li>
+            <li class="address2">416-888-8888</li>
+            <li class="address2"><a href="mailto: info@royalcanadianchairforce.com">info@royalcanadianchairforce.com</a></li>
+          </ul>
+          <ul class="socialMedia">
+            <li>
+              <a href="#"><img src = "./Assets/iconmonstr-instagram-10-64.png" aria-hidden="true"></a>
+                <span class="sr-only">
+                    <a href="#">Instagram</a>
+                </span>
+            </li>
+            <li>
+              <a href="#"><img src = "./Assets/iconmonstr-twitter-5-64.png" aria-hidden="true"></a>
+              <span class="sr-only">
+                  <a href="#">Twitter</a>
+              </span>
+            </li>
+            <li>
+              <a href="#"><img src = "./Assets/iconmonstr-youtube-10-64.png" aria-hidden="true"></a>
+              <span class="sr-only">
+                  <a href="#">YouTube</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+<script src="script.js"></script>
+</html>
+
+
+
+  

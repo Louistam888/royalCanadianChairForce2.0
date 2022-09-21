@@ -1,0 +1,54 @@
+@use "variables" as *;
+
+// FOOTER
+
+hr {
+  margin-bottom: 10px;
+}
+
+footer {
+  height: 20vh;
+}
+
+.footerContainer {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.address1 {
+  color: black;
+  list-style:none;
+  font-family: $roboto;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.address2 {
+  color: black;
+  list-style:none;
+  font-family: $roboto;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.addressInfo {
+  width: 30%;
+
+}
+.addressInfo a {
+  color: black;
+  text-decoration-style: none;
+}
+
+.socialMedia {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.socialMedia li {
+  color: black;
+  margin-left: 20px;
+  list-style: none;
+}

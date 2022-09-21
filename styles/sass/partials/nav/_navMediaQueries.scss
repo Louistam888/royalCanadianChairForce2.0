@@ -1,0 +1,135 @@
+@use "../variables" as *;
+
+@media (max-width: 940px) {
+
+  nav a:hover,
+  nav a:focus {
+  background-color: white;
+  color: black;
+  }
+
+  .navContainer {
+      height: 90px; 
+  }
+
+  nav {
+      padding: 0;
+  }
+  
+
+  .navRed {
+      font-size: 2rem; 
+  }
+  
+  .navBlue {
+      font-size: 2rem;
+  }
+   
+//   HAMBURGER MENU 
+
+  .hamburger {
+      display: block;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: -100%;
+      top: 90px;
+      width: 100%;
+      text-align: center; 
+      transition: 0.3s; 
+      justify-content: flex-start;
+      align-items: center;
+      height: calc(100vh - 90px);
+      resize: none;
+      overflow: auto;
+      background-color: white;
+      transition: all 0.3s ease-in-out;
+  }
+
+  .menu.active {
+      right: 0;
+
+  }
+
+  .menu li {
+      padding: 20px;
+      list-style: none;
+      text-align: center;
+  }
+
+  .menu li a {
+      margin: 0 auto;
+      padding: 0;
+      color: black;
+      font-size: 5rem;
+      text-align: center;         
+  }
+
+  i {
+      color: black;
+  }
+
+  i:hover, 
+  i:focus {
+      cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+   
+  .menu li a {
+      margin: 0;
+      padding: 0;
+      color: black;
+      font-size: 4rem;
+    }
+
+  .logoBox {
+      width: 50%;
+  }
+
+  .logoBox img {
+      height: 60px; 
+      width: auto;
+  }
+
+  .navRed {
+      font-size: 1.8rem; 
+  }
+  
+  .navBlue {
+      font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .logoBox {
+    width: 80%;
+  }
+
+.navRed {
+    font-size: 1.5rem; 
+    line-height: 1;
+  }
+
+.navBlue {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}

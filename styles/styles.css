@@ -1,0 +1,931 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Roboto Flex";
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 1700px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf");
+}
+body {
+  background-color: white;
+  color: black;
+}
+
+section {
+  margin: 60px auto;
+  scroll-margin-top: 15vh;
+}
+
+p {
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  color: black;
+}
+
+nav {
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  padding: 6px 0;
+  z-index: 100;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  z-index: 1;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  display: flex;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 10px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+nav img {
+  width: auto;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 90px;
+}
+
+.hamburger {
+  display: none;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  *transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+.logoBox {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+  align-items: center;
+}
+
+.logoBoxHover {
+  width: 60%;
+  padding: 0;
+  margin: 0;
+}
+
+.navRed {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(255, 0, 0, 0.7);
+  font-size: 2.5rem;
+}
+
+.navBlue {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(0, 0, 255, 0.7);
+  font-size: 2.5rem;
+}
+
+.logoBoxText {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+hr {
+  margin-bottom: 10px;
+}
+
+footer {
+  height: 20vh;
+}
+
+.footerContainer {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.address1 {
+  color: black;
+  list-style: none;
+  font-family: "Roboto Flex";
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.address2 {
+  color: black;
+  list-style: none;
+  font-family: "Roboto Flex";
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.addressInfo {
+  width: 30%;
+}
+
+.addressInfo a {
+  color: black;
+  text-decoration-style: none;
+}
+
+.socialMedia {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.socialMedia li {
+  color: black;
+  margin-left: 20px;
+  list-style: none;
+}
+
+@media (max-width: 940px) {
+  nav a:hover,
+nav a:focus {
+    background-color: white;
+    color: black;
+  }
+  .navContainer {
+    height: 90px;
+  }
+  nav {
+    padding: 0;
+  }
+  .navRed {
+    font-size: 2rem;
+  }
+  .navBlue {
+    font-size: 2rem;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -100%;
+    top: 90px;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100vh - 90px);
+    resize: none;
+    overflow: auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  .menu.active {
+    right: 0;
+  }
+  .menu li {
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+  }
+  .menu li a {
+    margin: 0 auto;
+    padding: 0;
+    color: black;
+    font-size: 5rem;
+    text-align: center;
+  }
+  i {
+    color: black;
+  }
+  i:hover,
+i:focus {
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  .menu li a {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 4rem;
+  }
+  .logoBox {
+    width: 50%;
+  }
+  .logoBox img {
+    height: 60px;
+    width: auto;
+  }
+  .navRed {
+    font-size: 1.8rem;
+  }
+  .navBlue {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 480px) {
+  .logoBox {
+    width: 80%;
+  }
+  .navRed {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .navBlue {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+html.index h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-family: "Roboto Flex";
+  animation: fade1 2s;
+}
+@keyframes fade1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+html.index h2 {
+  font-size: 4rem;
+  line-height: 4rem;
+  margin: 0 auto;
+  animation: fade2 5s;
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+html.index h3 {
+  text-align: left;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  padding: 5px 0px;
+  color: black;
+}
+html.index h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+html.index h5 {
+  font-size: 2.5rem;
+  color: black;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+html.index header {
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(to bottom, rgba(50, 50, 50, 0.1) 0%, rgba(0, 0, 0, 0.6) 70%, rgb(0, 0, 0) 100%), url("/Assets/mainimage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  background-position: center -10%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+html.index .mainTextContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
+  padding-bottom: 70px;
+}
+html.index .h1Red {
+  color: red;
+  font-family: "Roboto Flex";
+}
+html.index .chairBrands ul {
+  display: flex;
+  justify-content: space-between;
+}
+html.index .chairBrands img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+html.index .sectionText {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+html.index .doubleGrid li {
+  margin: 5px;
+  width: calc(50% - 10px);
+  position: relative;
+}
+html.index .tripleGrid li {
+  margin: 5px;
+  width: calc(33.3333333333% - 10px);
+  height: 300px;
+  position: relative;
+}
+html.index .brandLabelDouble {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+}
+html.index .brandLabelTriple {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+}
+html.index .brandLabelDouble p, html.index .brandLabelTriple p {
+  color: black;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+html.index .brandHoverOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+html.index .brandHoverOverlay h4 {
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+}
+html.index .brandHoverOverlay:hover,
+html.index .brandHoverOverlay:focus {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+}
+html.index .doubleGrid li:hover > .brandLabelDouble, html.index .tripleGrid li:hover > .brandLabelTriple {
+  visibility: hidden;
+}
+html.index .deliveryContainer {
+  display: flex;
+  margin-top: 25px;
+}
+html.index .deliveryContainer img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+html.index .innerDeliveryContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 45px;
+  justify-content: center;
+  padding-left: 30px;
+  border-left: 2.5px solid black;
+}
+html.index .h5Underline {
+  color: black;
+  border-bottom: 2px solid red;
+}
+html.index .innerDeliveryContainer p {
+  margin-top: 20px;
+}
+html.index .contact {
+  background-image: url("/Assets/tech2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+html.index .contact h3, html.index .contact p {
+  color: white;
+}
+html.index form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+  padding-top: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+html.index .contactInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  margin-top: 40px;
+}
+html.index .contactInfo label {
+  margin-bottom: 5px;
+  margin-top: 6px;
+}
+html.index .contactInfo input {
+  width: 100%;
+  color: black;
+  margin-bottom: 5px;
+}
+html.index .contactInfo select, html.index .contactInfo option, html.index textarea {
+  color: black;
+  font-size: 2rem;
+  font-family: "Roboto Flex", sans-serif;
+}
+html.index button {
+  color: rgba(255, 255, 0, 0.89);
+  margin: 25px auto;
+  background: rgba(255, 0, 0, 0.753);
+  border: 1px solid rgba(255, 255, 0, 0.89);
+  text-transform: uppercase;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+html.index button:active {
+  background-color: rgba(255, 255, 0, 0.89);
+  color: rgba(255, 0, 0, 0.753);
+  transition: 0.3s;
+}
+html.index textarea {
+  resize: none;
+}
+html.index select, html.index textarea {
+  margin-bottom: 5px;
+}
+html.index .aboutText {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+html.index .aboutText img {
+  width: 40%;
+  height: 350px;
+  object-fit: cover;
+  object-position: 20% center;
+}
+html.index .companyBio {
+  width: 60%;
+  margin-left: 30px;
+}
+html.index .companyBio p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1200px) {
+  html.index header {
+    background-position: center top 50px;
+  }
+}
+@media (max-width: 940px) {
+  html.index h1 {
+    font-size: 5rem;
+  }
+  html.index h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  html.index .chairBrands ul {
+    flex-direction: column;
+  }
+  html.index .doubleGrid li {
+    margin: 5px 0;
+    width: 100%;
+    height: 30vh;
+  }
+  html.index .tripleGrid li {
+    margin: 5px 0;
+    width: 100%;
+    height: 30vh;
+  }
+  html.index .brandLabelDouble p, html.index .brandLabelTriple p {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  html.index .deliveryContainer {
+    flex-direction: column;
+  }
+  html.index .deliveryContainer img {
+    height: 30vh;
+  }
+  html.index .innerDeliveryContainer {
+    margin: 25px auto;
+    justify-content: center;
+    padding: 0;
+    border: none;
+  }
+  html.index h5 {
+    text-align: center;
+  }
+  html.index .aboutText {
+    flex-direction: column;
+  }
+  html.index .aboutText img {
+    width: 100%;
+    height: 30vh;
+  }
+  html.index .companyBio {
+    width: 100%;
+    margin: 25px auto;
+  }
+  html.index .footerContainer {
+    flex-direction: column;
+  }
+  html.index .addressInfo {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 10px auto;
+  }
+  html.index .socialMedia {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  html.index .socialMedia li {
+    color: black;
+    margin-left: 20px;
+    list-style: none;
+  }
+}
+@media (max-width: 768px) {
+  html.index h1 {
+    font-size: 3.5rem;
+  }
+  html.index h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  html.index h3 {
+    font-size: 3rem;
+  }
+  html.index h5 {
+    font-size: 2rem;
+  }
+  html.index .contactInfo {
+    font-size: 1.5rem;
+  }
+  html.index .contactInfo select, html.index .contactInfo option, html.index textarea {
+    font-size: 1.5rem;
+  }
+  html.index button {
+    font-size: 1.5rem;
+  }
+  html.index .doubleGrid li, html.index .tripleGrid li {
+    height: 25vh;
+  }
+  html.index .deliveryContainer img {
+    height: 20vh;
+  }
+  html.index .companyBio {
+    margin-bottom: 0px;
+  }
+  html.index .aboutText img {
+    height: 20vh;
+  }
+  html.index .socialMedia img {
+    height: 40px;
+    width: auto;
+  }
+}
+@media (max-width: 480px) {
+  html.index header {
+    height: 50vh;
+    background-position: center top 60px;
+  }
+  html.index h1 {
+    font-size: 3rem;
+  }
+  html.index h2 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  html.index h3 {
+    font-size: 2.5rem;
+  }
+  html.index .contactInfo {
+    font-size: 1.5rem;
+  }
+  html.index .contactInfo select, html.index .contactInfo option, html.index textarea {
+    font-size: 1.5rem;
+  }
+  html.index button {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 430px) {
+  html.index h1 {
+    font-size: 2.3rem;
+  }
+  html.index h2 {
+    font-size: 1.9rem;
+    line-height: 3rem;
+  }
+  html.index h3 {
+    font-size: 2.3rem;
+  }
+  html.index h5 {
+    font-size: 1.9rem;
+  }
+}
