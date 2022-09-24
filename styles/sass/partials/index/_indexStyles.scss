@@ -1,13 +1,11 @@
-@use "../variables" as *;
-
-
 html.index {
 
   h1 {
     font-size: 6rem;
     text-transform: uppercase;
     margin: 0 auto;
-    font-family: $roboto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     animation: fade1 2s;
   }
 
@@ -21,6 +19,8 @@ html.index {
     line-height: 4rem;
     margin: 0 auto;
     animation: fade2 5s;
+    font-family:'Lato', sans-serif;
+    font-weight: 100;
   }
 
   @keyframes fade2 {
@@ -79,7 +79,8 @@ html.index {
 
   .h1Red {
     color: red;
-    font-family: $roboto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
   }
 
 
@@ -250,7 +251,8 @@ html.index {
   .contactInfo select, .contactInfo option, textarea {
     color: black;
     font-size: 2rem;  
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
   }
 
   button {
