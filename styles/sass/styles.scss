@@ -4,8 +4,13 @@
 @use "partials/nav/nav";
 @use "partials/footer";
 
-@use "partials/nav/navMediaQueries";
 
+@use "partials/about/aboutStyles";
 @use "partials/index/indexStyles";
+
+@use "partials/nav/navMediaQueries";
 @use "partials/index/indexMediaQueries";
+@use "partials/about/aboutMediaQueries";
+@use "partials/generalMediaQueries";
+
 

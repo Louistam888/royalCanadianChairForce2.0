@@ -399,6 +399,12 @@ footer {
   color: black;
   text-decoration-style: none;
 }
+.addressInfo a:hover {
+  color: rgba(0, 0, 255, 0.7);
+}
+.addressInfo a:focus {
+  color: rgba(0, 0, 255, 0.7);
+}
 
 .socialMedia {
   width: 70%;
@@ -409,110 +415,160 @@ footer {
 
 .socialMedia li {
   color: black;
-  margin-left: 20px;
+  margin: 0 5px;
   list-style: none;
 }
 
-@media (max-width: 940px) {
-  nav a:hover,
-nav a:focus {
-    background-color: white;
-    color: black;
-  }
-  .navContainer {
-    height: 90px;
-  }
-  nav {
-    padding: 0;
-  }
-  .navRed {
-    font-size: 2rem;
-  }
-  .navBlue {
-    font-size: 2rem;
-  }
-  .hamburger {
-    display: block;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(2) {
+i {
+  height: 100%;
+  color: black;
+}
+i:hover {
+  color: rgba(0, 0, 255, 0.7);
+}
+i:focus {
+  color: rgba(0, 0, 255, 0.7);
+}
+
+html.about h1 {
+  font-size: 7.5rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  animation: fade1 2s;
+}
+@keyframes fade1 {
+  0% {
     opacity: 0;
   }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  .menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: -100%;
-    top: 90px;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    justify-content: flex-start;
-    align-items: center;
-    height: calc(100vh - 90px);
-    resize: none;
-    overflow: auto;
-    background-color: white;
-    transition: all 0.3s ease-in-out;
-  }
-  .menu.active {
-    right: 0;
-  }
-  .menu li {
-    padding: 20px;
-    list-style: none;
-    text-align: center;
-  }
-  .menu li a {
-    margin: 0 auto;
-    padding: 0;
-    color: black;
-    font-size: 5rem;
-    text-align: center;
-  }
-  i {
-    color: black;
-  }
-  i:hover,
-i:focus {
-    cursor: pointer;
+  100% {
+    opacity: 1;
   }
 }
-@media (max-width: 768px) {
-  .menu li a {
-    margin: 0;
-    padding: 0;
-    color: black;
-    font-size: 4rem;
+html.about h2 {
+  font-size: 5rem;
+  line-height: 4rem;
+  margin: 0 auto;
+  animation: fade2 5s;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
   }
-  .logoBox img {
-    height: 60px;
-    width: auto;
+  45% {
+    opacity: 0;
   }
-  .navRed {
-    font-size: 1.8rem;
-  }
-  .navBlue {
-    font-size: 1.8rem;
+  100% {
+    opacity: 1;
   }
 }
-@media (max-width: 480px) {
-  .navRed {
-    font-size: 1.5rem;
-    line-height: 1;
-  }
-  .navBlue {
-    font-size: 1.5rem;
-    line-height: 1;
-  }
+html.about h3 {
+  text-align: left;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  padding: 5px 0px;
+  color: black;
+  margin-bottom: 20px;
 }
+html.about h4 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px;
+}
+html.about header {
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(to bottom, rgba(50, 50, 50, 0.1) 0%, rgba(0, 0, 0, 0.6) 70%, rgb(0, 0, 0) 100%), url("/Assets/gaming-chairs-1200x3852.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  background-position: center -10%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+html.about .mainTextContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
+  padding-bottom: 70px;
+}
+html.about .h1Red {
+  color: red;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+html.about .aboutText {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+html.about .aboutText img {
+  width: 40%;
+  height: 350px;
+  object-fit: cover;
+  object-position: 20% center;
+}
+html.about .companyBio {
+  width: 60%;
+  margin-left: 30px;
+}
+html.about .companyBio p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+html.about .accordion {
+  border-bottom: 2px solid white;
+}
+html.about .accordionItemHeader {
+  cursor: pointer;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  font-size: 2rem;
+}
+html.about .accordionItemHeader::after, html.about .accordionItemHeader.active::after {
+  font-size: 3.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+}
+html.about .accordionItemHeader::after {
+  content: "+";
+}
+html.about .accordionItemHeader.active::after {
+  content: "-";
+}
+html.about .accordionContent {
+  padding: 10px;
+  color: black;
+  font-size: 2rem;
+  border: 2px solid black;
+}
+html.about .accordionItemBody {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: max-height 0.5s ease-out;
+}
+
 html.index h1 {
-  font-size: 6rem;
+  font-size: 7.5rem;
   text-transform: uppercase;
   margin: 0 auto;
   font-family: "Lato", sans-serif;
@@ -528,7 +584,7 @@ html.index h1 {
   }
 }
 html.index h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 4rem;
   margin: 0 auto;
   animation: fade2 5s;
@@ -748,32 +804,113 @@ html.index textarea {
 html.index select, html.index textarea {
   margin-bottom: 5px;
 }
-html.index .aboutText {
-  display: flex;
-  align-items: center;
-  margin-top: 25px;
-}
-html.index .aboutText img {
-  width: 40%;
-  height: 350px;
-  object-fit: cover;
-  object-position: 20% center;
-}
-html.index .companyBio {
-  width: 60%;
-  margin-left: 30px;
-}
-html.index .companyBio p {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
 
+@media (max-width: 940px) {
+  nav a:hover,
+nav a:focus {
+    background-color: white;
+    color: black;
+  }
+  .navContainer {
+    height: 90px;
+  }
+  nav {
+    padding: 0;
+  }
+  .navRed {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .navBlue {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -100%;
+    top: 90px;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100vh - 90px);
+    resize: none;
+    overflow: auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  .menu.active {
+    right: 0;
+  }
+  .menu li {
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+  }
+  .menu li a {
+    margin: 0 auto;
+    padding: 0;
+    color: black;
+    font-size: 5rem;
+    text-align: center;
+  }
+  i {
+    color: black;
+  }
+  i:hover,
+i:focus {
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  .menu li a {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 4rem;
+  }
+  .logoBox img {
+    height: 60px;
+    width: auto;
+  }
+  .navRed {
+    font-size: 1.8rem;
+  }
+  .navBlue {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 480px) {
+  .navRed {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .navBlue {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
 @media (max-width: 1200px) {
   html.index header {
     background-position: center top 50px;
   }
 }
-@media (max-width: 940px) {
+@media (max-width: 950px) {
   html.index h1 {
     font-size: 5rem;
   }
@@ -813,37 +950,6 @@ html.index .companyBio p {
   html.index h5 {
     text-align: center;
   }
-  html.index .aboutText {
-    flex-direction: column;
-  }
-  html.index .aboutText img {
-    width: 100%;
-    height: 30vh;
-  }
-  html.index .companyBio {
-    width: 100%;
-    margin: 25px auto;
-  }
-  html.index .footerContainer {
-    flex-direction: column;
-  }
-  html.index .addressInfo {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    margin: 10px auto;
-  }
-  html.index .socialMedia {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-  }
-  html.index .socialMedia li {
-    color: black;
-    margin-left: 20px;
-    list-style: none;
-  }
 }
 @media (max-width: 768px) {
   html.index h1 {
@@ -873,16 +979,6 @@ html.index .companyBio p {
   }
   html.index .deliveryContainer img {
     height: 20vh;
-  }
-  html.index .companyBio {
-    margin-bottom: 0px;
-  }
-  html.index .aboutText img {
-    height: 20vh;
-  }
-  html.index .socialMedia img {
-    height: 40px;
-    width: auto;
   }
 }
 @media (max-width: 480px) {
@@ -923,5 +1019,136 @@ html.index .companyBio p {
   }
   html.index h5 {
     font-size: 1.9rem;
+  }
+}
+@media (max-width: 1200px) {
+  html.about header {
+    background-position: center top 50px;
+  }
+}
+@media (max-width: 950px) {
+  html.about h1 {
+    font-size: 5rem;
+  }
+  html.about h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  html.about .aboutText {
+    flex-direction: column;
+  }
+  html.about .aboutText img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+  }
+  html.about .companyBio {
+    width: 100%;
+    margin: 25px auto;
+  }
+}
+@media (max-width: 768px) {
+  html.about h1 {
+    font-size: 3.5rem;
+  }
+  html.about h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  html.about h3 {
+    font-size: 3rem;
+  }
+  html.about h4 {
+    font-size: 2rem;
+  }
+  html.about .companyBio {
+    margin-bottom: 0px;
+  }
+  html.about .aboutText img {
+    height: 280px;
+  }
+}
+@media (max-width: 480px) {
+  html.about header {
+    height: 50vh;
+    background-position: center top 60px;
+  }
+  html.about h1 {
+    font-size: 3rem;
+  }
+  html.about h2 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  html.about h3 {
+    font-size: 2.5rem;
+  }
+  html.about h4 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 430px) {
+  html.about h1 {
+    font-size: 2.3rem;
+  }
+  html.about h2 {
+    font-size: 1.9rem;
+    line-height: 3rem;
+  }
+  html.about h3 {
+    font-size: 2.3rem;
+  }
+  html.about h4 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 950px) {
+  p {
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+  }
+  section {
+    margin: 50px auto;
+  }
+  .footerContainer {
+    flex-direction: column;
+  }
+  .addressInfo {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 10px auto;
+  }
+  .socialMedia {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  .socialMedia li {
+    color: black;
+    list-style: none;
+  }
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+}
+@media (max-width: 480px) {
+  p {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+}
+@media (max-width: 430px) {
+  p {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+  section {
+    margin: 50px auto;
   }
 }

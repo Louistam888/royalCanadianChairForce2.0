@@ -1,4 +1,4 @@
-@media (max-width: 940px) {
+@media (max-width: 950px) {
 
   p {
       font-size: 1.9rem;
@@ -8,8 +8,31 @@
   section {
       margin: 50px auto;
   }
-}
 
+  .footerContainer {
+    flex-direction: column;
+  
+  }
+
+  .addressInfo {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      margin: 10px auto;
+  }
+
+  .socialMedia {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 20px auto; 
+  }
+
+  .socialMedia li {
+      color: black;
+      list-style: none;
+  }
+}
 
 @media (max-width: 768px) {
   

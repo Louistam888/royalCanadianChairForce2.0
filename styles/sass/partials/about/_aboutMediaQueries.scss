@@ -1,0 +1,115 @@
+@media (max-width: 1200px) {
+  html.about {
+    header {
+      background-position: center top 50px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  html.about {
+  
+    h1 {
+      font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .aboutText {
+      flex-direction: column;
+  }
+  
+    .aboutText img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center center;
+    }
+    
+    .companyBio {
+        width: 100%;
+        margin: 25px auto; 
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  html.about {
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+
+    .companyBio {
+      margin-bottom: 0px;
+   }
+  
+    .aboutText img {
+        height: 280px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  html.about {
+
+    header {
+        height: 50vh;
+        background-position: center top 60px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  html.about {
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+        font-size: 2.3rem;
+    }
+
+    h4 {
+      font-size: 1.4rem;
+    }
+  }
+}
