@@ -137,11 +137,11 @@ html.about {
   }
 
   .accordionItemHeader::after {
-    content: "\002B";
+    content: "\002B" / "expand question";
   }
 
   .accordionItemHeader.active::after {
-    content: "\002D";   
+    content: "\002D"/ "collapse question";   
   }
   
   .accordionContent {
